@@ -1,0 +1,170 @@
+/* Importera Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
+
+body {
+    font-family: 'Inter', Arial, sans-serif;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+    background-color: #F4F9F5;
+    color: #3C492F;
+    line-height: 1.6;
+}
+
+/* Header */
+
+.site-header {
+    background-color: #fff;
+}
+
+.header-top {
+    max-width: 100rem;
+    margin: 0 auto;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-branding {
+    flex: 1;
+}
+
+.site-title {
+    margin: 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.site-title a {
+    text-decoration: none;
+    color: #3C492F;
+}
+
+.site-title a:hover {
+    color: #748364;
+}
+
+
+/* Meny */
+.site-nav {
+    display: flex;
+    align-items: center;
+}
+
+.site-nav .main-menu,
+nav .main-menu,
+.main-menu,
+ul.main-menu {
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    display: flex !important;
+    flex-direction: row !important;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.site-nav .main-menu li,
+nav .main-menu li,
+.main-menu li,
+ul.main-menu li {
+    margin: 0 !important;
+    padding: 0rem 0.5rem !important;
+    list-style: none !important;
+    display: inline-block;
+}
+
+.site-nav .main-menu a,
+nav .main-menu a,
+.main-menu a,
+ul.main-menu a {
+    text-decoration: none;
+    color: #3C492F;
+    font-weight: 500;
+    padding: 5px 0;
+    transition: color 0.3s;
+    white-space: nowrap;
+}
+
+.site-nav .main-menu a:hover {
+    color: #748364;
+}
+/* Header Hero (bara bild) */
+.header-hero {
+    width: 100%;
+    min-height: 400px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Sidans innehåll */
+
+.content-area {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.site-main {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+/* Footer */
+
+.site-footer {
+    background-color: #3C492F;
+    color: #F4F9F5;
+    text-align: center;
+    padding: 30px 20px;
+    margin-top: 60px;
+}
+
+.footer-widgets {
+    max-width: 1200px;
+    margin: 0 auto 20px;
+}
+
+.footer-widget {
+    margin-bottom: 15px;
+}
+
+.footer-widget-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #F4F9F5;
+}
+
+.footer-widget a {
+    color: #D2DBCA;
+}
+
+.footer-widget a:hover {
+    color: #ADB9A1;
+}
+
+.site-footer p {
+    margin: 10px 0;
+    color: #D2DBCA;
+}
+
+@media (max-width: 768px) {
+    .header-top {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .site-nav .main-menu {
+        justify-content: center;
+        margin-top: 15px;
+    }
+
+    .header-hero {
+        min-height: 300px;
+    }
+}
