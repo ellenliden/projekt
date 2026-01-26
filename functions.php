@@ -6,6 +6,14 @@ function yoga_theme_setup() {
     // WordPress hanterar <title>-taggen
     add_theme_support( 'title-tag' );
 
+    // Stöd för logotyp
+add_theme_support( 'custom-logo', array(
+    'height'      => 120,
+    'width'       => 300,
+    'flex-height' => true,
+    'flex-width'  => true,
+) );
+
     // Stöd för "utvald bild" (featured image)
     add_theme_support( 'post-thumbnails' );
     
