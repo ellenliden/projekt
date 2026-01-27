@@ -8,7 +8,7 @@
         </div>
     <?php endif; ?>
 
-    <p>
+    <p class="footer-copyright">
         &copy; <?php echo date( 'Y' ); ?>
         <?php bloginfo( 'name' ); ?>
     </p>

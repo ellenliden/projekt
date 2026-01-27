@@ -6,7 +6,7 @@ body {
     font-weight: 400;
     margin: 0;
     padding: 0;
-    background-color: #F4F9F5;
+    background-color: #F7F8F5;
     color: #3C492F;
     line-height: 1.6;
 }
@@ -14,7 +14,7 @@ body {
 /* Header */
 
 .site-header {
-    background-color: #fff;
+    background-color: #F7F8F5;
 }
 
 .header-top {
@@ -46,6 +46,11 @@ body {
     color: #748364;
 }
 
+.custom-logo {
+    max-height: 4rem;
+    width: auto;
+    margin-left: 1rem;
+}
 
 /* Meny */
 .site-nav {
@@ -82,7 +87,7 @@ nav .main-menu a,
 ul.main-menu a {
     text-decoration: none;
     color: #3C492F;
-    font-weight: 500;
+    font-weight: 400;
     padding: 5px 0;
     transition: color 0.3s;
     white-space: nowrap;
@@ -91,10 +96,48 @@ ul.main-menu a {
 .site-nav .main-menu a:hover {
     color: #748364;
 }
+
+/* Dropdown  */
+.site-nav .main-menu {
+    display: flex !important;
+}
+.site-nav .main-menu .menu-item-has-children {
+    position: relative;
+}
+
+.site-nav .main-menu .sub-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 200px;
+    background: #F7F8F5;
+    padding: 10px 0;
+    margin: 0;
+    list-style: none;
+    display: none;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    z-index: 999;
+}
+
+.site-nav .main-menu .menu-item-has-children:hover > .sub-menu,
+.site-nav .main-menu .menu-item-has-children:focus-within > .sub-menu {
+    display: block;
+}
+
+.site-nav .main-menu .sub-menu li {
+    display: block;
+}
+
+.site-nav .main-menu .sub-menu a {
+    display: block;
+    padding: 8px 16px;
+}
+
 /* Header Hero (bara bild) */
 .header-hero {
     width: 100%;
-    min-height: 400px;
+    min-height: 500px;
+
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -114,15 +157,147 @@ ul.main-menu a {
     padding: 0 20px;
 }
 
+/* Nyheter */
+.news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin: 40px 0;
+  }
+  
+  .news-card {
+padding-bottom: 1rem;
+  }
+
+  .news-card:nth-child(1) {
+    background: #D4DBCE; 
+    color: #000000;
+  }
+  
+  .news-card:nth-child(2) {
+    background: #CB8060; 
+    color: #ffffff;
+  }
+  
+  .news-card:nth-child(3) {
+    background: #767E6D; 
+    color: #ffffff;
+  }
+  .news-card:nth-child(2) .news-card__link,
+  .news-card:nth-child(2) .news-card__title {
+    color: #F4F9F5;
+  }
+  .news-card:nth-child(3) .news-card__link,
+  .news-card:nth-child(3) .news-card__title {
+    color: #F4F9F5;
+  }
+
+  .news-card h3 {
+    padding: 1.2rem; 
+  }
+
+  .news-card p {
+    padding: 0 1.2rem; 
+    font-size: 0.9rem;
+  }
+  .news-card a {
+    padding: 1.2rem; 
+  
+  }
+  .news-card__thumb img {
+    width: 100%;
+    min-height: 16rem;
+    max-height: 16rem;
+    object-fit: cover;
+    display: block;
+    padding: 0;
+    margin-bottom: 12px;
+  }
+  
+  .news-card__title {
+    margin: 0 0 8px 0;
+    font-size: 1.1rem;
+  }
+  
+  .news-card__excerpt {
+    margin: 0 0 12px 0;
+  }
+  
+  .news-card__link {
+    text-decoration: none;
+    color: #3C492F;
+    font-weight: 600;
+  }
+  
+  /* blogginlägg-sidan */
+  .single-post {
+    margin: 40px auto;
+    padding: 0 20px;
+  }
+  
+  .single-article {
+    background: #fff;
+    padding: 28px;
+    border-radius: 8px;
+    max-width:46rem;
+    margin: 0 auto;
+  }
+  
+  .single-title {
+    margin: 0 0 6px 0;
+    color: #3C492F;
+  }
+  
+  .single-meta {
+    margin: 0 0 20px 0;
+    color: #748364;
+    font-size: 0.9rem;
+  }
+  
+  .single-thumb img {
+    width: 100%;
+    min-height: 24rem;
+    max-height: 24rem;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+    margin-bottom: 20px;
+  }
+  
+  .single-content {
+    line-height: 1.7;
+  }
+
+  .post-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    border-top: 1px solid #E0E6DC;
+    max-width: 46rem;
+    margin: 0 auto;
+    margin-top: 1.8rem;
+  }
+  
+  .post-nav a {
+    text-decoration: none;
+    color: #3C492F;
+    font-weight: 600;
+  }
+  
+  .post-nav a:hover {
+    color: #CB8060;
+  }
+ 
 /* Footer */
 
 .site-footer {
     background-color: #3C492F;
     color: #F4F9F5;
-    text-align: center;
+    text-align: left;
     padding: 30px 20px;
     margin-top: 60px;
 }
+
 
 .footer-widgets {
     max-width: 1200px;
@@ -152,6 +327,20 @@ ul.main-menu a {
     margin: 10px 0;
     color: #D2DBCA;
 }
+ .footer-copyright  {
+    text-align: center;
+    margin: 20px 0 0;
+    padding-top: 14px;
+    border-top: 1px solid rgba(210, 219, 202, 0.5);
+}
+.site-footer .footer-widget ul,
+.site-footer .footer-widget ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 
 @media (max-width: 768px) {
     .header-top {
@@ -167,4 +356,8 @@ ul.main-menu a {
     .header-hero {
         min-height: 300px;
     }
+
+    .news-grid {
+        grid-template-columns: 1fr;
+      }
 }
