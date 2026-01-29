@@ -17,6 +17,10 @@ add_theme_support( 'custom-logo', array(
     // Stöd för "utvald bild" (featured image)
     add_theme_support( 'post-thumbnails' );
     
+
+// WooCommerce-stöd
+add_theme_support( 'woocommerce' );
+
     // Stöd för header-bild (Utseende > Anpassa > Header Media)
     add_theme_support( 'custom-header', array(
         'flex-width'  => true,
