@@ -37,10 +37,18 @@
     </div>
 
     <?php
-    // Visa header-bild om den finns
-    if ( get_header_image() ) : ?>
-        <div class="header-hero" style="background-image: url('<?php header_image(); ?>');">
-        </div>
+    // Visa header-bild om den finns (utvald bild eller inställd i header-bild)
+
+    $header_img = '';
+    
+    if ( is_singular() && has_post_thumbnail() ) {
+      $header_img = get_the_post_thumbnail_url( get_the_ID(), 'full' );
+    } elseif ( get_header_image() ) {
+      $header_img = get_header_image();
+    }
+    
+    if ( $header_img ) : ?>
+      <div class="header-hero" style="background-image: url('<?php echo esc_url( $header_img ); ?>');"></div>
     <?php endif; ?>
 </header>
 
