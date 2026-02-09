@@ -156,13 +156,32 @@ ul.main-menu a {
     margin: 40px auto;
     padding: 0 20px;
 }
-
+/* Startsida – introblock */
+.intro-block {
+    color: #2E3A2A;
+    padding: 2rem;
+ max-width: 46rem;
+    margin: 0 auto;
+  }
+  
+  .intro-block h2 {
+text-align: center;
+    color: #3C492F;
+    margin-top: 0;
+  }
+  
+  .intro-block p {
+    margin-bottom: 0;
+    line-height: 1.7;
+    text-align: center;
+  }
 /* Nyheter */
 .news-grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-    margin: 40px 0;
+    margin-top: 3rem;
+    margin-bottom: 5rem;
   }
   
   .news-card {
@@ -388,7 +407,11 @@ font-weight: 600;
   color: #3C492F;
   font-weight: 600;
 }
-
+.blogg-title {
+max-width: 46rem;
+margin: 0 auto;
+margin-bottom: 2rem;
+}
 /* Footer */
 
 .site-footer {
