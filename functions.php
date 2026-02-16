@@ -47,6 +47,20 @@ function yoga_footer_widget_init() {
 }
 add_action( 'widgets_init', 'yoga_footer_widget_init' );
 
+// Tvinga fram "Anpassade fält" i editorn
+function yoga_force_custom_fields_metabox() {
+    add_post_type_support( 'post', 'custom-fields' );
+    add_post_type_support( 'page', 'custom-fields' );
+}
+add_action( 'init', 'yoga_force_custom_fields_metabox' );
+
+function yoga_add_custom_fields_metabox() {
+    add_meta_box( 'postcustom', 'Custom Fields', 'post_custom_meta_box', 'post', 'normal', 'core' );
+    add_meta_box( 'postcustom', 'Custom Fields', 'post_custom_meta_box', 'page', 'normal', 'core' );
+}
+add_action( 'add_meta_boxes', 'yoga_add_custom_fields_metabox' );
+add_filter( 'acf/settings/remove_wp_meta_box', '__return_false' );
+
 // Läs in CSS-filer
 function yoga_theme_enqueue_styles() {
     wp_enqueue_style(

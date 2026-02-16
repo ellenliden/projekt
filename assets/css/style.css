@@ -463,9 +463,61 @@ margin-bottom: 2rem;
     padding: 0;
 }
 
-  
- 
- 
+/* Team-sidan med kontaktinfo   */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 24px;
+    margin: 2rem 0;
+}
+
+.team-card {
+    background: #fff;
+    padding: 16px;
+    text-align: center;
+}
+
+.team-card__image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 12px;
+}
+
+.team-card__name {
+    font-size: 1.2rem;
+    margin: 0 0 3px;
+}
+
+.team-card__role {
+    color: #6B7A67;
+    margin: 0 0 10px;
+    font-size: 1rem;
+}
+
+.team-card__contact a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team-card__contact a:hover {
+    text-decoration: underline;
+}
+.team-card__contact p {
+    margin: 4px 0;
+    line-height: 1.2;
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 1024px) {
+    .team-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+
 
 @media (max-width: 768px) {
     .header-top {
@@ -494,4 +546,7 @@ margin-bottom: 2rem;
       .about-card--reverse .about-card__content {
         order: initial;
       }
+      .team-grid {
+        grid-template-columns: 1fr;
+    }
 }
