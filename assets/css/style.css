@@ -463,6 +463,7 @@ margin-bottom: 2rem;
     padding: 0;
 }
 
+
 /* Team-sidan med kontaktinfo   */
 .team-grid {
     display: grid;
@@ -470,6 +471,23 @@ margin-bottom: 2rem;
     gap: 24px;
     margin: 2rem 0;
 }
+
+/* Historia-sidan */
+.history-content {
+    max-width: 42rem;
+    line-height: 1.7;
+    text-align: left;
+}
+
+.history-content h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
+}
+
+.history-content ul {
+    margin: 0 0 1rem 1.2rem;
+}
+
 
 .team-card {
     background: #fff;
