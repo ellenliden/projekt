@@ -22,13 +22,13 @@ get_header();
       </div>
     </article>
     <nav class="post-nav">
-  <div class="post-nav__prev">
-    <?php previous_post_link( '%link', '< Föregående inlägg' ); ?>
-  </div>
-  <div class="post-nav__next">
-    <?php next_post_link( '%link', 'Nästa inlägg >' ); ?>
-  </div>
-</nav>
+      <div class="post-nav__prev">
+        <?php previous_post_link( '%link', '< Föregående inlägg', true, '', 'category' ); ?>
+      </div>
+      <div class="post-nav__next">
+        <?php next_post_link( '%link', 'Nästa inlägg >', true, '', 'category' ); ?>
+      </div>
+    </nav>
 
   <?php endwhile; ?>
 </main>
