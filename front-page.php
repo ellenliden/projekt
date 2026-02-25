@@ -9,6 +9,7 @@ $intro_title = get_field('intro-title');
 $intro_text  = get_field('intro_text');
 ?>
 
+
 <?php if ( $intro_title || $intro_text ) : ?>
   <section class="intro-block">
     <?php if ( $intro_title ) : ?>
@@ -20,7 +21,7 @@ $intro_text  = get_field('intro_text');
   </section>
 <?php endif; ?>
 
-  <section class="news-grid">
+<section class="news-grid">
     <?php
       $news_query = new WP_Query(array(
         'post_type'      => 'post',
@@ -93,6 +94,13 @@ $intro_text  = get_field('intro_text');
     </div>
   </section>
 
+
+
+  <?php if ( class_exists( 'WooCommerce' ) ) : ?>
+  <section class="products-grid">
+    <?php echo do_shortcode( '[products limit="4" columns="4" tag="startsida" orderby="date" order="DESC"]' ); ?>
+  </section>
+<?php endif; ?>
 </div>
 
 <?php

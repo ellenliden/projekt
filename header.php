@@ -37,11 +37,13 @@
     </div>
 
     <?php
-    // Visa header-bild om den finns (utvald bild eller inställd i header-bild)
+    // Visa header-bild om den finns (utvald bild eller inställd i header-bild), men inte på produktsidor eller blogginlägg som redan har utvald bild till produkt/inlägg.
 
     $header_img = '';
-    
-    if ( is_singular() && has_post_thumbnail() ) {
+    $is_product_page = function_exists( 'is_product' ) && is_product();
+    $is_blog_post = is_singular( 'post' );
+
+    if ( is_singular() && has_post_thumbnail() && ! $is_product_page && ! $is_blog_post ) {
       $header_img = get_the_post_thumbnail_url( get_the_ID(), 'full' );
     } elseif ( get_header_image() ) {
       $header_img = get_header_image();
