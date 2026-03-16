@@ -75,3 +75,4 @@ function yoga_theme_enqueue_styles() {
     );
 }
 add_action( 'wp_enqueue_scripts', 'yoga_theme_enqueue_styles' );
+

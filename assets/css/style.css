@@ -407,6 +407,19 @@ font-weight: 600;
   color: #3C492F;
   font-weight: 600;
 }
+
+.single-product .woocommerce-product-gallery__image img {
+  width: 100%;
+  max-width: 40rem;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  display: block;
+  margin-right: 10rem;
+}
+
+.product_meta .tagged_as {
+  display: none;
+}
 .blogg-title {
 max-width: 46rem;
 margin: 0 auto;
