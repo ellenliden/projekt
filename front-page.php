@@ -98,7 +98,7 @@ $intro_text  = get_field('intro_text');
 
   <?php if ( class_exists( 'WooCommerce' ) ) : ?>
   <section class="products-grid">
-    <?php echo do_shortcode( '[products limit="4" columns="4" tag="startsida" orderby="date" order="DESC"]' ); ?>
+    <?php echo do_shortcode( '[products limit="6" columns="3" tag="startsida" orderby="date" order="DESC"]' ); ?>
   </section>
 <?php endif; ?>
 </div>
