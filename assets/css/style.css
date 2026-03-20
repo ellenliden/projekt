@@ -97,6 +97,11 @@ ul.main-menu a {
   color: #748364;
 }
 
+/* understryk den sida man är på */
+.site-nav .main-menu .current-menu-item > a {
+  text-decoration: underline;
+}
+
 /* Dropdown  */
 .site-nav .main-menu {
   display: flex !important;
