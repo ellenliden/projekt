@@ -5,7 +5,6 @@ Template Name: Blogg
 get_header();
 ?>
 
-<main id="main" class="site-main">
   <section class="content-area">
     <h1 class="blogg-title"><?php the_title(); ?></h1>
 
@@ -45,7 +44,6 @@ $blogg_query = new WP_Query( array(
   <p>Inga blogginlägg hittades.</p>
 <?php endif; ?>
   </section>
-</main>
 
 <?php
 get_footer();

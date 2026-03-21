@@ -5,7 +5,6 @@ Template Name: Om oss (ACF två kort)
 get_header();
 ?>
 
-<main id="main" class="site-main">
   <?php while ( have_posts() ) : the_post(); ?>
 
     <?php
@@ -57,6 +56,5 @@ get_header();
     </section>
 
   <?php endwhile; ?>
-</main>
 
 <?php get_footer(); ?>

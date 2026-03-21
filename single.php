@@ -2,7 +2,7 @@
 get_header();
 ?>
 
-<main id="main" class="site-main single-post">
+<div class="single-post">
   <?php while ( have_posts() ) : the_post(); ?>
 
     <article <?php post_class('single-article'); ?>>
@@ -31,7 +31,7 @@ get_header();
     </nav>
 
   <?php endwhile; ?>
-</main>
+</div>
 
 <?php
 get_footer();

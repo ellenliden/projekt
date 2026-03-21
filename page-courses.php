@@ -5,7 +5,6 @@ Template Name: Kurser
 get_header();
 ?>
 
-<main id="main" class="site-main">
   <?php while ( have_posts() ) : the_post(); ?>
     <header class="page-header">
       <h1 class="page-title"><?php the_title(); ?></h1>
@@ -68,6 +67,5 @@ get_header();
 
     <?php wp_reset_postdata(); ?>
   <?php endwhile; ?>
-</main>
 
 <?php get_footer(); ?>
