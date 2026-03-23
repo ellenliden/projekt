@@ -229,21 +229,21 @@ ul.main-menu a {
 }
 
 .news-card:nth-child(2) {
-  background: #cb8060;
-  color: #ffffff;
+  background: #d79d84;
+  color: #000000;
 }
 
 .news-card:nth-child(3) {
-  background: #767e6d;
-  color: #ffffff;
+  background: #a6aca0;
+  color: #000000;
 }
 .news-card:nth-child(2) .news-card__link,
 .news-card:nth-child(2) .news-card__title {
-  color: #f4f9f5;
+  color: #000000;
 }
 .news-card:nth-child(3) .news-card__link,
 .news-card:nth-child(3) .news-card__title {
-  color: #f4f9f5;
+  color: #000000;
 }
 
 .news-card h3 {
