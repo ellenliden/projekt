@@ -26,6 +26,13 @@
 </div>
 
         <nav class="site-nav">
+            <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+            <label for="menu-toggle" class="menu-toggle-label" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </label>
+
             <?php
             wp_nav_menu( array(
                 'theme_location' => 'primary',
